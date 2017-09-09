@@ -9,14 +9,25 @@
   -moz-border-radius: 90px;
   -webkit-border-radius: 90px;
   border-radius: 90px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-/* .fa.icon:hover {
-  color: gray;
-} */
+.fa.icon:hover {
+  color: #1596FF;
+  border: 2px solid #1596FF;
+}
 
 .anchor:hover {
   color: transparent;
+}
+
+hr {
+  width: 75%;
+  border-top: 1px solid #1596FF;
 }
 
 .jumbotron {
@@ -57,7 +68,7 @@
 }
 
 .project-row {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .project-thumb {
@@ -113,17 +124,17 @@
 }
 
 footer {
-  margin: 30px 0;
-}
-
-.connect-row {
-  padding: 20px 0;
+  margin: 20px 0 40px;
 }
 
 a.connect {
   color: #000;
   font-size: 35px;
   padding: 0 10px;
+}
+
+a.connect:hover {
+  color: #1596FF;
 }
 
 @media (max-width: 1199px) {
