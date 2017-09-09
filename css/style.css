@@ -82,7 +82,7 @@ hr {
 
 .image .git, .image .demo {
   position: absolute;
-  display: none;
+  opacity: 0;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -107,7 +107,7 @@ hr {
 }
 
 .image:hover .git, .image:hover .demo {
-  display: inline;
+  opacity: 1;
 }
 
 .image img {
