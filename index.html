@@ -6,12 +6,14 @@
   <title>Jonathan Wong</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/e93e87a450.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-fixed-top navbar-inverse">
+  <!-- <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
@@ -24,44 +26,72 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav navbar-right">
-          <span class="icon"><a href="https://github.com/jdwong415" class="navbar-link"><i class="fa fa-github-alt" aria-hidden="true"></i></a></span>
-          <span class="icon"><a href="https://www.linkedin.com/in/wongjd/" class="navbar-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
-          <span class="icon"><a href="mailto:jwong85@ucmerced.edu" class="navbar-link"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
+          <span class="icon"><a href="https://github.com/jdwong415" class="navbar-link" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></span>
+          <span class="icon"><a href="https://www.linkedin.com/in/wongjd/" class="navbar-link" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+          <span class="icon"><a href="mailto:jwong85@ucmerced.edu" class="navbar-link" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
         </ul>
     </div>
     </div>
-  </nav>
+  </nav> -->
   <div class="jumbotron">
-    <div class="container">
-      <h1 class="text-center">Jonathan Wong</h1>
-      <p class="lead text-center">Full Stack Developer</p>
+    <div class="container text-center">
+      <h1>Jonathan Wong</h1>
+      <p class="title">Full Stack Developer</p>
+      <a href="https://github.com/jdwong415" target="_blank"><i class="icon fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/wongjd/" target="_blank"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="mailto:jwong85@ucmerced.edu" target="_blank"><i class="icon fa fa-envelope" aria-hidden="true"></i></a>
       <a class="anchor" href="#projects"><p class="arrow text-center">&#9660;</p></a>
     </div>
   </div>
   <a name="projects"></a>
   <div class="main container">
+    <h2 class="text-center"><strong>Projects</strong></h2>
     <div class="row">
-      <h2 class="text-center projects"><strong>Projects</strong></h2>
-      <div class="col-md-6">
-        <a href="https://fierce-woodland-16916.herokuapp.com/"><img class="img-responsive" src="./img/hotel.png"></a>
-        <p>An internal hotel management application.<br>
-        Node.js, Express.js, Sequelize, Handlebars.js, and Passport.js<br>
-        <a href="https://github.com/jdwong415/hotel-booking">GitHub</a>
-        <a href="https://fierce-woodland-16916.herokuapp.com/">Demo</a></p>
-      </div>
-      <div class="col-md-6">
-        <a href="https://safe-basin-76233.herokuapp.com/"><img class="img-responsive" src="./img/news.png"></a>
-        A San Francisco Giants news article scraper.<br>
-        Node.js, Express.js, Mongoose, and Cheerio<br>
-        <a href="https://github.com/jdwong415/news-scraper">GitHub</a>
-        <a href="https://safe-basin-76233.herokuapp.com/">Demo</a></p>
+      <div class="col-md-6 project-row">
+        <div class="image">
+          <img class="img-responsive project-thumb" src="./img/restawant.png">
+          <a href="https://github.com/wcheung26/Restawant" target="_blank" class="git">GitHub</a>
+          <a href="https://aqueous-ravine-60303.herokuapp.com/" target="_blank" class="demo">Demo</a>
+        </div>
+        <p>A web app assisting restaurants to manage and grow their social media marketing through social influencers, who promote with generated QR codes and earn cash rewards for each scan.<br>
+        Node.js, Express.js, Bootstrap, Sequelize, React.js, and Passport.js<br>
+        <a href="https://github.com/wcheung26/Restawant" target="_blank">GitHub</a>
+        <a href="https://aqueous-ravine-60303.herokuapp.com/" target="_blank">Demo</a></p>
       </div>
       <div class="col-md-6 project-row">
-        <a href="https://limitless-earth-86443.herokuapp.com/"><img class="img-responsive" src="./img/burger.png"></a>
-        A restaurant app that lets users order and eat burgers.<br>
-        Node.js, Express.js, Sequelize, and Handlebars.js<br>
-        <a href="https://github.com/jdwong415/sequelized-burger">GitHub</a>
-        <a href="https://limitless-earth-86443.herokuapp.com/">Demo</a></p>
+        <div class="image">
+          <img class="img-responsive project-thumb" src="./img/hotel.png">
+          <a href="https://github.com/jdwong415/hotel-booking" target="_blank" class="git">GitHub</a>
+          <a href="https://fierce-woodland-16916.herokuapp.com/" target="_blank" class="demo">Demo</a>
+        </div>
+        <p>An internal hotel management application.<br>
+        Node.js, Express.js, Bootrap, Sequelize, Handlebars.js, and Passport.js<br>
+        <a href="https://github.com/jdwong415/hotel-booking" target="_blank">GitHub</a>
+        <a href="https://fierce-woodland-16916.herokuapp.com/" target="_blank">Demo</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 project-row">
+        <div class="image">
+          <img class="img-responsive project-thumb" src="./img/news.png">
+          <a href="https://github.com/jdwong415/news-scraper" target="_blank" class="git">GitHub</a>
+          <a href="https://safe-basin-76233.herokuapp.com/" target="_blank" class="demo">Demo</a>
+        </div>
+        <p>A San Francisco Giants news article scraper.<br>
+        Node.js, Express.js, Bootrap, Mongoose, and Cheerio<br>
+        <a href="https://github.com/jdwong415/news-scraper" target="_blank">GitHub</a>
+        <a href="https://safe-basin-76233.herokuapp.com/" target="_blank">Demo</a></p>
+      </div>
+      <div class="col-md-6 project-row">
+        <div class="image">
+          <img class="img-responsive project-thumb" src="./img/burger.png">
+          <a href="https://github.com/jdwong415/sequelized-burger" target="_blank" class="git">GitHub</a>
+          <a href="https://limitless-earth-86443.herokuapp.com/" target="_blank" class="demo">Demo</a>
+        </div>
+        <p>A restaurant app that lets users order and eat burgers.<br>
+        Node.js, Express.js, Bootrap, Sequelize, and Handlebars.js<br>
+        <a href="https://github.com/jdwong415/sequelized-burger" target="_blank">GitHub</a>
+        <a href="https://limitless-earth-86443.herokuapp.com/" target="_blank">Demo</a></p>
       </div>
     </div>
   </div>
@@ -69,9 +99,9 @@
     <div class="container text-center">
       <h2><strong>Connect With Me</strong></h2>
       <div class="row connect-row">
-        <a href="https://github.com/jdwong415" class="connect"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/wongjd/" class="connect"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="mailto:jwong85@ucmerced.edu" class="connect"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://github.com/jdwong415" class="connect" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/wongjd/" class="connect" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:jwong85@ucmerced.edu" class="connect" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
