@@ -21,8 +21,19 @@
   border: 2px solid #1596FF;
 }
 
-.anchor:hover {
-  color: transparent;
+.fa.anchor-style {
+  font-size: 8vh;
+  color: #fff;
+}
+
+.fa.anchor-style:hover, .fa.anchor-style:focus {
+  color: #1596FF;
+  text-decoration: none;
+}
+
+p#anchor-id {
+  margin-top: 40vh;
+  margin-bottom: 0;
 }
 
 hr {
@@ -54,13 +65,6 @@ hr {
   font-family: 'Yantramanav', sans-serif;  
   font-weight: 300;
   text-transform: uppercase;
-}
-
-.jumbotron p.arrow {
-  margin-top: 40vh;
-  margin-bottom: 0;
-  font-size: 3vh;
-  color: #fff;
 }
 
 .main {

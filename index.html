@@ -20,10 +20,10 @@
       <a href="https://github.com/jdwong415" target="_blank"><i class="icon fa fa-github" aria-hidden="true"></i></a>
       <a href="https://www.linkedin.com/in/wongjd/" target="_blank"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
       <a href="mailto:jwong85@ucmerced.edu" target="_blank"><i class="icon fa fa-envelope" aria-hidden="true"></i></a>
-      <a class="anchor" href="#projects"><p class="arrow">&#9660;</p></a>
+      <p id="anchor-id"><a class="anchor" href="#projects"><i class="anchor-style fa fa-caret-down" aria-hidden="true"></i></a></p>
     </div>
   </div>
-  <a name="projects"></a>
+  <a id="projects"></a>
   <div class="main container">
     <h2 class="text-center"><strong>Projects</strong></h2>
     <hr>
@@ -79,5 +79,18 @@
       </div>
     </div>
   </footer>
+  <script>
+    $("a[href*='#']").on("click", function(event) {
+      var hash = this.hash;
+      if (hash !== "") {
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: $(hash).offset().top
+        }, 500, function() {
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
 </body>
 </html>
